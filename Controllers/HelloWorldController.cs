@@ -25,7 +25,7 @@ namespace MvcMovie.Controllers
             return "This is the Welcome action method...";
         }
 
-        public string Welcome1(string name, int numTimes = 1)
+        public string Welcome(string name, int numTimes = 1)
         {
             return HtmlEncoder.Default.Encode($"Hello {name}, NumTimes is: {numTimes}");
         }
